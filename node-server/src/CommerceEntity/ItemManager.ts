@@ -63,23 +63,23 @@ export class ItemManager {
     // public addImage(itemImage: IItemImage) {
     //     this._items.get(itemImage.id)?.addImage(itemImage);
     // }
-    
+
     /**
      * Registers the Items and their images.
      * @param items The items.
      * @param itemCategories The categories.
      */
     public registerItems(items: IItem[]) {
-      for (const item of items) {
-          this.registerItem(item);
+        for (const item of items) {
+            this.registerItem(item);
 
-          // for (const itemImage of itemImages) {
-          //     if (itemImage.id === item.id) {
-          //         this.addImage(itemImage);
-          //     }
-          // }
-      }
-  }
+            // for (const itemImage of itemImages) {
+            //     if (itemImage.id === item.id) {
+            //         this.addImage(itemImage);
+            //     }
+            // }
+        }
+    }
 
     /**
      * Registers an Item.
