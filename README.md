@@ -2,13 +2,13 @@
 This is the source code for my University Final Year Project.
 Users can create an account and buy, trade and sell items.
 There is item filtering and searching functionality for searching for specific items.
-The system can also recommend items to a user based on their previous purchases and preferences using a form of machine learning/content-based filtering specifically through finding the cosine similarity between items and users.
+The system can also recommend items to a user based on their previous purchases and preferences using a form of machine learning/content-based filtering through finding the cosine similarity between items and users.
 
 ### How to run?
-The Visual Studio Code environment is required for running the project, as well Node.js, NPM and MySQL.
+The Visual Studio Code environment is required for running the project.
 
 Firstly, import the database file using:
-`mysql -u Username -p Marketplace < MarketplaceBackup.sql`
+`mysql -u [Username] -p Marketplace < MarketplaceDatabaseEmpty.sql`
 
 Install the packages:
 Navigate to `/marketplace-web/`
