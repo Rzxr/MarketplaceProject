@@ -9,10 +9,13 @@ The system can also recommend items to a user based on their previous purchases 
 ### How to run?
 The Visual Studio Code environment is required for running the project.
 
-Firstly, import the database file using:
+Firstly, in your MySQL environment, create a new database called `Marketplace` by running the command:
+`CREATE DATABASE Marketplace;`
+
+Then import the database file using:
 `mysql -u [Username] -p Marketplace < MarketplaceDatabaseEmpty.sql`
 
-Install the packages:
+Install the packages: <br>
 Navigate to `/marketplace-web/`
 - run: `npm install`
 
