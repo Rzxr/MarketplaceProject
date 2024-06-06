@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Confirmed</title>
+    </head>
+    <!-- Note: this is a workaround to stop the flash of the HTML loading  -->
+    <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+                <nav>
+                    <a href="AllItems.html" class="selectionbutton">View All Items</a>
+                    <a href="ListItem.html" class="selectionbutton">Create Listing</a>
+                    <a href="BasketCheckout.html" class="selectionbutton">Basket</a>
+                    <a href="Account.html" class="selectionbutton">Account</a>
+                </nav>
+            </header>
+
+            <div class="order-container">
+                <h2>Your order has been placed</h2>
+                <p>Thank you for your purchase. Your Order ID is: <span id="order-id"></span></p>
+                <div class="order-items" id="order-items-container">
+                </div>
+                <div class="order-total">
+                    <p>Total: £0.00</p>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>Online Marketplace Project 2023/24</p>
+                    <!-- <div class="footer-icon-credit-links">
+                    </div> -->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

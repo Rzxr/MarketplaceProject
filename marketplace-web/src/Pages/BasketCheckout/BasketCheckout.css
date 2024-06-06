@@ -1,0 +1,218 @@
+/* Override browser autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #FFF9E1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* Firefox override styles*/
+input:-moz-autofill,
+input:-moz-autofill:hover, 
+input:-moz-autofill:focus, 
+input:-moz-autofill:active {
+    box-shadow: 0 0 0 30px #FFF9E1 inset !important;
+}
+
+/* Base Styles */
+body, h2, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.marketplace-app {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #4b5b72;
+    color: #ecf0f1;
+}
+
+.navbar span {
+    font-size: 1.75em;
+}
+
+.selectionbutton, .home-link {
+    padding: 10px 15px;
+    
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 25px;
+    display: inline-block;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.selectionbutton:hover, .home-link:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.marketplace-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.main-basket-container {
+    flex-grow: 1;
+}
+
+/* Styles for the footer */
+.footer {
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    padding: 10px 0;
+    color: inherit;
+    bottom: 0; 
+    box-sizing: border-box;
+
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+
+    padding: 0;
+    margin-bottom: 0;
+
+    background-color: #4b5b72;
+    color: #ecf0f1;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    padding: 0 15px;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+.footer.content p {
+    width: 100%;
+}
+
+.footer a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+/* Basket Styles */
+.basket-container {
+    max-width: 85%; 
+    min-width: 50%;
+    margin: 2em auto; 
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.basket-container h2 {
+    padding-bottom: 1%;
+    font-size: x-large;
+}
+
+/* Styles for the basket items */
+.basket-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 1em; 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+    padding-top: 0;
+    margin-top: 0;
+    height: 10em;
+}
+
+.basket-item-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.basket-item-details p {
+    margin: 0.25em 0;
+    color: #666;
+}
+
+.basket-item:last-child {
+    border-bottom: none;
+}
+
+.basket-total {
+    text-align: right;
+    padding: 1em 0;
+}
+
+/* Styles for the checkout button */
+.checkout-button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.checkout-button:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.remove-item {
+    width: 35px;
+}
+
+.remove-item.hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

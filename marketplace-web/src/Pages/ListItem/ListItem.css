@@ -1,0 +1,231 @@
+/* Override browser autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #FFF9E1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* Firefox override styles*/
+input:-moz-autofill,
+input:-moz-autofill:hover, 
+input:-moz-autofill:focus, 
+input:-moz-autofill:active {
+    box-shadow: 0 0 0 30px #FFF9E1 inset !important;
+}
+
+/* Base Styles */
+body, h2, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body, html {
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #4b5b72;
+    color: #ecf0f1;
+}
+
+.navbar span {
+    font-size: 1.75em;
+}
+
+.selectionbutton, .home-link {
+    padding: 10px 15px;
+    
+    text-decoration: none;
+    color: #ecf0f1;
+    border-radius: 25px;
+    display: inline-block;
+    
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.selectionbutton:hover, .home-link:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+/* Styles for the footer */
+.footer {
+    text-align: center;
+    border-top: 1px solid #e4e4e4;
+    padding: 10px 0;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+    margin-top: 2%;
+
+    padding: 0;
+
+    background-color: #4b5b72;
+    color: #ecf0f1;
+}
+
+.footer-content {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; 
+}
+
+.footer a {
+    white-space: nowrap;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer p {
+    width: 100%;
+}
+
+/* Styles for the Create Item Container */
+.create-item-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1% 3% 1% 3%;
+}
+
+/* Styles for the Item Form */
+.item-group {
+    background-color: #f7f7f7;
+    padding: 3%;
+    border: 1px solid #d4d4d4;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    /* margin-left: 1% */
+}
+
+.item-group label {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Styles for moving the checkboxes to the right of the labels */
+.checkbox-group {
+    position: relative;
+    padding: 1% 0;
+}
+
+.checkbox-group input[type="checkbox"] {
+    position: absolute;
+    right: 70%; 
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 1em;
+    padding-right: 50%; 
+}
+
+.item-group input[type="text"],
+#item-quantity-input,
+#item-price-input,
+.item-group input[type="file"],
+.item-group select,
+.item-group textarea {
+    width: 98%;
+    padding: 1%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 0.5%;
+}
+
+.item-group input[type="file"] {
+    margin-top: 0;
+    padding: 1% 0 0 0;
+    border: none;
+}
+
+.list-item {
+    background-color: #5cb85c;
+    color: white;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 3%;
+    display: block;
+    width: 100%;
+}
+
+.list-item:hover {
+    background-color: #4cae4c;
+}
+
+/* Styles for the popup */
+#popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+    z-index: 1000;
+    background-color: white;
+}
+
+.visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#popup.success {
+    background-color: #4CAF50;
+}
+
+#popup.error {
+    background-color: #f44336;
+}
+
+/* Styles for displaying a image that has been uploaded */
+/* Note: not currently implemented */
+.item-group input[type="file"] {
+    display: block;
+    width: 100%;
+    padding-bottom: 2%;
+    box-sizing: border-box;
+}
+
+.item-group button#clear-image {
+    background-color: #255d98;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    outline: none;
+}
+
+.item-group button#clear-image:hover {
+    background-color: #0056b3;
+}

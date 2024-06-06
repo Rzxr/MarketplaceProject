@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>List Item</title>
+    </head>
+        <!-- Note: this is a workaround to stop the flash of the HTML loading  -->
+        <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+                <nav>
+                    <a href="AllItems.html" class="selectionbutton">View All Items</a>
+                    <a href="ListItem.html" class="selectionbutton">Create Listing</a>
+                    <a href="BasketCheckout.html" class="selectionbutton">Basket</a>
+                    <a href="Account.html" class="selectionbutton">Account</a>
+                </nav>
+            </header>
+
+            <div id="popup">popup</div>
+
+            <div class="item-creation-container"> 
+                <div class="create-item-container">
+
+                    <h2 class="create">List Your Item</h2>
+
+                    <div class="message-container"></div>
+
+                    <div class="item-group">
+                        <label for="item-name-input">Item Name</label>
+                        <input id="item-name-input" type="text" placeholder="Enter item name">
+                    </div>
+
+                    <div class="item-group price-container">
+                        <label for="item-price-input">Price (£)</label>
+                        <div class="input-container">
+                            <span class="currency-symbol" style="display: none;">£</span>
+                            <input id="item-price-input" type="number" min="0" step="0.01" placeholder="Enter item price">
+                        </div>
+                    </div>
+
+                    <div class="item-group">
+                        <label for="item-description-input">Description</label>
+                        <textarea id="item-description-input" placeholder="Enter item description"></textarea>
+                    </div>
+
+                    <div class="item-group">
+                        <label for="item-quantity-input">Quantity</label>
+                        <input id="item-quantity-input" type="number" min="1" value="1" placeholder="Enter quantity">
+                    </div>
+
+                    <div class="item-group">
+                        <label>Category:</label>
+                        <div class="category-group">
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-electronics" name="category" value="electronics">
+                                <label for="category-electronics">Electronics</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-clothing" name="category" value="clothing">
+                                <label for="category-clothing">Clothing</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-sports" name="category" value="sports">
+                                <label for="category-sports">Sports</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-gaming" name="category" value="gaming">
+                                <label for="category-gaming">Gaming</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-pc" name="category" value="pc">
+                                <label for="category-pc">PC</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-books" name="category" value="books">
+                                <label for="category-books">Books</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-movies" name="category" value="movies">
+                                <label for="category-movies">Movies</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-music" name="category" value="music">
+                                <label for="category-music">Music</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-garden" name="category" value="garden">
+                                <label for="category-garden">Garden</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-pets" name="category" value="pets">
+                                <label for="category-pets">Pets</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-phones" name="category" value="phones">
+                                <label for="category-phones">Phones</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input class="category" type="checkbox" id="category-food" name="category" value="food">
+                                <label for="category-food">Food</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-group">
+                        <label for="item-image-input">Item Image:</label>
+                        <input id="item-image-input" type="file">
+                        <button type="button" id="clear-image">Clear Image</button>
+                    </div>
+
+                    <button class="list-item" type="button">List Item</button>
+                </div>
+
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>Online Marketplace Project 2023/24</p>
+                        <div class="footer-icon-credit-links">
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

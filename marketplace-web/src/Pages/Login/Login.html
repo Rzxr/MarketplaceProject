@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - Marketplace</title>
+    </head>
+    <!-- Stops the render flash -->
+    <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+            </header>
+
+            <div class="login-container">
+                <h2 class="login-text">Login to Your Account</h2>
+                <form class="login-form">
+                    <label for="email">Email:</label>
+                    <input type="email" class="email-box" name="email" required>
+
+                    <label for="password">Password:</label>
+                    <input type="password" class="password-box" name="password" required>
+                    
+                    <p class="error-message"></p>
+
+                    <button type="submit" class="login-button">Login</button>
+
+                    <p class="register-link">Don't have an account? 
+                        <a href="/Signup.html">Register here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

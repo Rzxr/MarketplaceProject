@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup - Marketplace</title>
+    </head>
+    <!-- Stops the render flash -->
+    <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+            </header>
+            <div class="signup-container">
+                <h2 class="create">Create your account</h2>
+
+                <div class="signup-group">
+                    <label for="email-label">Enter your email</label>
+                    <input id="email-input" type="text" placeholder="my_email@example.com">
+                </div>
+
+                <div class="signup-group">
+                    <label for="password-label">Enter your password</label>
+                    <input id="password-input" type="password" placeholder="Enter your password here"></input>
+                    <input id="confirm-password-input" type="password" placeholder="Please confirm your password"></input>
+                </div>
+
+                <div class="signup-group">
+                    <label for="address-label">Enter your address</label>
+                    <textarea id="address-input" placeholder="Enter your address here"></textarea>
+                </div>
+
+                <div class="signup-group">
+                    <label>Select your interested categories:</label>
+                    <div class="category-group">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-electronics" name="category" value="electronics">
+                            <label for="category-electronics">Electronics</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-clothing" name="category" value="clothing">
+                            <label for="category-clothing">Clothing</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-sports" name="category" value="sports">
+                            <label for="category-sports">Sports</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-gaming" name="category" value="gaming">
+                            <label for="category-gaming">Gaming</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-pc" name="category" value="pc">
+                            <label for="category-pc">PC</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-books" name="category" value="books">
+                            <label for="category-books">Books</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-movies" name="category" value="movies">
+                            <label for="category-movies">Movies</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-music" name="category" value="music">
+                            <label for="category-music">Music</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-garden" name="category" value="garden">
+                            <label for="category-garden">Garden</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-pets" name="category" value="pets">
+                            <label for="category-pets">Pets</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-phones" name="category" value="phones">
+                            <label for="category-phones">Phones</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="category-food" name="category" value="food">
+                            <label for="category-food">Food</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="create-account" type="button">Create Account</button>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>Online Marketplace Project 2023/24</p>
+                    <!-- <div class="footer-icon-credit-links">
+                    </div> -->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

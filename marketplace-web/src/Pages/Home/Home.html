@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Marketplace</title>
+    </head>
+    <!-- Note: this is a workaround to stop the flash of the HTML loading  -->
+    <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+                <input type="text" class="search-item-input" placeholder="Search items here..." />
+                <nav>
+                    <a href="AllItems.html" class="selectionbutton">View All Items</a>
+                    <a href="ListItem.html" class="selectionbutton">Create Listing</a>
+                    <a href="BasketCheckout.html" class="selectionbutton">Basket</a>
+                    <a href="Account.html" class="selectionbutton">Account</a>
+                </nav>
+            </header>
+
+            <div id="popup">Item added to basket!</div>
+            
+            <div class="carousel-content-container">
+
+                <section class="new-items">
+                    <h2>Our Newest Items</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow prev">&lt;</button>
+                        <div class=carousel>
+                            <div class="item-row"></div>
+                        </div>
+                        <button class="carousel-arrow next">&gt;</button>
+                    </div>
+                </section>
+
+                <section class="recommended-items">
+                    <h2 class="recommended-items-heading">Recommended Items</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow prev">&lt;</button>
+                        <div class=carousel>
+                            <div class="item-row"></div>
+                        </div>
+                        <button class="carousel-arrow next">&gt;</button>
+                    </div>
+                </section>
+
+                <section class="highest-rated-items">
+                    <h2>Highest Rated Items</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-arrow prev">&lt;</button>
+                        <div class=carousel>
+                            <div class="item-row"></div>
+                        </div>
+                        <button class="carousel-arrow next">&gt;</button>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p>Online Marketplace Project 2023/24</p>
+                    <div class="footer-icon-credit-links">
+                        <a target="_blank" href="https://icons8.com/icon/106880/shopping-basket-add">add to basket</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

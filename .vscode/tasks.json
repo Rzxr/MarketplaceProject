@@ -1,0 +1,67 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "marketplace-web",
+            "problemMatcher": [],
+            "label": "npm: start - marketplace-web",
+            "detail": "webpack serve --config webpack.config.js",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "path": "marketplace-web",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: watch - marketplace-web",
+            "detail": "tsc --watch",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "type": "npm",
+            "script": "dev",
+            "path": "node-server",
+            "problemMatcher": [],
+            "label": "npm: dev - node-server",
+            "detail": "nodemon --exec ts-node src/server.ts",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        },
+        {
+            "type": "npm",
+            "script": "watch",
+            "path": "node-server",
+            "group": "build",
+            "problemMatcher": [],
+            "label": "npm: watch - node-server",
+            "detail": "nodemon -e tsx --watch src --exec \"npm run build\"",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}

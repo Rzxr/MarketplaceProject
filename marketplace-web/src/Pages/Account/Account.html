@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Account</title>
+    </head>
+    <!-- Note: this is a workaround to stop the flash of the HTML loading  -->
+    <style> body {display: none;} </style>
+    <body>
+        <div class="marketplace-app">
+            <header class="navbar">
+                <a href="/" class="home-link"><span>Marketplace</span></a>
+                <nav>
+                    <a href="AllItems.html" class="selectionbutton">View All Items</a>
+                    <a href="ListItem.html" class="selectionbutton">Create Listing</a>
+                    <a href="BasketCheckout.html" class="selectionbutton">Basket</a>
+                    <a href="Account.html" class="selectionbutton">Account</a>
+                </nav>
+            </header>
+
+            <div id="popup">Updated</div>
+
+            <div class="account-main-container"> 
+                <div class="account-container">
+                    <div class="my-account-container"> 
+                        <h2 class="account">My Account</h2>
+                        <button type="button" class="logout">Logout</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <p class="user-email"></p>
+                        <input id="email-input" value="" style="display: none;">
+                        <button type="button" class="edit-button" edit-type="email">Edit</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password:</label>
+                        <p class="password" style="display: none;"></p>
+                        <input type="password" id="password-input" value="" style="display: none;">
+                        
+                        <p class="new-password" style="display: none;"></p>
+                        <input type="password" id="new-password-input" value="" style="display: none;">
+                        
+                        <p class="confirm-password" style="display: none;"></p>
+                        <input type="password" id="confirm-password-input" value="" style="display: none;">
+                        <button type="button" class="edit-button" edit-type="password">Change Password</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Address:</label>
+                        <p class="address"></p>
+                        <input type="text" id="address-input" value="" style="display: none;">
+                        <button type="button" class="edit-button" edit-type="address">Edit</button>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Edit your interested categories:</label>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-electronics" name="category" value="electronics">
+                            <label for="category-electronics">Electronics</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-clothing" name="category" value="clothing">
+                            <label for="category-clothing">Clothing</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-sports" name="category" value="sports">
+                            <label for="category-sports">Sports</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-gaming" name="category" value="gaming">
+                            <label for="category-gaming">Gaming</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-pc" name="category" value="pc">
+                            <label for="category-pc">PC</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-books" name="category" value="books">
+                            <label for="category-books">Books</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-movies" name="category" value="movies">
+                            <label for="category-movies">Movies</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-music" name="category" value="music">
+                            <label for="category-music">Music</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-garden" name="category" value="garden">
+                            <label for="category-garden">Garden</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-pets" name="category" value="pets">
+                            <label for="category-pets">Pets</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-phones" name="category" value="phones">
+                            <label for="category-phones">Phones</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input class="category" type="checkbox" id="category-food" name="category" value="food">
+                            <label for="category-food">Food</label>
+                        </div>
+                        </div>
+
+                        <button type="button" class="edit-button" edit-type="category">Edit</button>
+                    </div>
+
+                    <section class="past-orders">
+                        <h2>Your Past Orders</h2>
+                        <div class="past-orders-list"></div>
+                    </section>
+
+                    <div>
+                        <button type="button" class="seller-statistics">View your seller statistics</button>
+                    </div>
+
+                    <div class="account-buttons">
+                        <button class="delete-account" type="button" >Delete Account</button>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="footer-content">
+                        <p>Online Marketplace Project 2023/24.</p>
+                        <div class="footer-icon-credit-links">
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
