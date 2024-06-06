@@ -1,4 +1,6 @@
 ## Marketplace Project
+![Home image](./example-images/Home.png)
+
 This is the source code for my University Final Year Project.
 Users can create an account and buy, trade and sell items.
 There is item filtering and searching functionality for searching for specific items.
